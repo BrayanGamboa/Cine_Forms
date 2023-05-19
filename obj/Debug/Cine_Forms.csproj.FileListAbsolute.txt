@@ -1,0 +1,13 @@
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\bin\Debug\Cine_Forms.exe.config
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\bin\Debug\Cine_Forms.exe
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\bin\Debug\Cine_Forms.pdb
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.csproj.AssemblyReference.cache
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.csproj.SuggestedBindingRedirects.cache
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.Properties.Resources.resources
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.csproj.GenerateResource.cache
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.csproj.CoreCompileInputs.cache
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.exe
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.pdb
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.Admin.resources
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.Inicio.resources
+C:\Users\bsgv2\OneDrive - pascualbravo.edu.co\Herramientas de programación\Cine_Forms\obj\Debug\Cine_Forms.Usuario.resources
