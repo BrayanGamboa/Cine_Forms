@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.grp_Form_Peliculas = new System.Windows.Forms.GroupBox();
             this.img_Inicio = new System.Windows.Forms.PictureBox();
             this.lbl_Titulo = new MaterialSkin.Controls.MaterialLabel();
             this.enviar_Datos = new MaterialSkin.Controls.MaterialButton();
             this.genero_Pelicula = new MaterialSkin.Controls.MaterialComboBox();
             this.materialDrawer1 = new MaterialSkin.Controls.MaterialDrawer();
-            this.horario_Pelicula = new MaterialSkin.Controls.MaterialTextBox();
             this.url_Imagen = new MaterialSkin.Controls.MaterialTextBox();
             this.duracion_Pelicula = new MaterialSkin.Controls.MaterialTextBox();
             this.nombre_Pelicula = new MaterialSkin.Controls.MaterialTextBox();
+            this.horario_Pelicula = new MaterialSkin.Controls.MaterialComboBox();
             this.grp_Form_Peliculas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Inicio)).BeginInit();
             this.SuspendLayout();
             // 
             // grp_Form_Peliculas
             // 
+            this.grp_Form_Peliculas.Controls.Add(this.horario_Pelicula);
             this.grp_Form_Peliculas.Controls.Add(this.img_Inicio);
             this.grp_Form_Peliculas.Controls.Add(this.lbl_Titulo);
             this.grp_Form_Peliculas.Controls.Add(this.enviar_Datos);
             this.grp_Form_Peliculas.Controls.Add(this.genero_Pelicula);
             this.grp_Form_Peliculas.Controls.Add(this.materialDrawer1);
-            this.grp_Form_Peliculas.Controls.Add(this.horario_Pelicula);
             this.grp_Form_Peliculas.Controls.Add(this.url_Imagen);
             this.grp_Form_Peliculas.Controls.Add(this.duracion_Pelicula);
             this.grp_Form_Peliculas.Controls.Add(this.nombre_Pelicula);
@@ -122,10 +123,12 @@
             this.genero_Pelicula.IntegralHeight = false;
             this.genero_Pelicula.ItemHeight = 43;
             this.genero_Pelicula.Items.AddRange(new object[] {
-            " ",
+            "",
             "Terror",
             "Infantil",
-            "Suspenso"});
+            "Suspenso",
+            "Comedia",
+            "Accion"});
             this.genero_Pelicula.Location = new System.Drawing.Point(251, 371);
             this.genero_Pelicula.MaxDropDownItems = 4;
             this.genero_Pelicula.MouseState = MaterialSkin.MouseState.OUT;
@@ -152,24 +155,6 @@
             this.materialDrawer1.TabIndex = 15;
             this.materialDrawer1.Text = "materialDrawer1";
             this.materialDrawer1.UseColors = false;
-            // 
-            // horario_Pelicula
-            // 
-            this.horario_Pelicula.AnimateReadOnly = false;
-            this.horario_Pelicula.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.horario_Pelicula.Depth = 0;
-            this.horario_Pelicula.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.horario_Pelicula.Hint = "Horario de la pelicula";
-            this.horario_Pelicula.LeadingIcon = null;
-            this.horario_Pelicula.Location = new System.Drawing.Point(250, 240);
-            this.horario_Pelicula.MaxLength = 50;
-            this.horario_Pelicula.MouseState = MaterialSkin.MouseState.OUT;
-            this.horario_Pelicula.Multiline = false;
-            this.horario_Pelicula.Name = "horario_Pelicula";
-            this.horario_Pelicula.Size = new System.Drawing.Size(325, 50);
-            this.horario_Pelicula.TabIndex = 14;
-            this.horario_Pelicula.Text = "";
-            this.horario_Pelicula.TrailingIcon = null;
             // 
             // url_Imagen
             // 
@@ -225,26 +210,55 @@
             this.nombre_Pelicula.Text = "";
             this.nombre_Pelicula.TrailingIcon = null;
             // 
+            // horario_Pelicula
+            // 
+            this.horario_Pelicula.AutoResize = false;
+            this.horario_Pelicula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.horario_Pelicula.Depth = 0;
+            this.horario_Pelicula.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.horario_Pelicula.DropDownHeight = 174;
+            this.horario_Pelicula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.horario_Pelicula.DropDownWidth = 121;
+            this.horario_Pelicula.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.horario_Pelicula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.horario_Pelicula.FormattingEnabled = true;
+            this.horario_Pelicula.Hint = "Horario";
+            this.horario_Pelicula.IntegralHeight = false;
+            this.horario_Pelicula.ItemHeight = 43;
+            this.horario_Pelicula.Items.AddRange(new object[] {
+            "",
+            "6:00 (P.M)",
+            "6:30 (P.M)",
+            "8:00 (P.M)",
+            "8:30 (P.M)",
+            "10:00 (P.M)"});
+            this.horario_Pelicula.Location = new System.Drawing.Point(250, 241);
+            this.horario_Pelicula.MaxDropDownItems = 4;
+            this.horario_Pelicula.MouseState = MaterialSkin.MouseState.OUT;
+            this.horario_Pelicula.Name = "horario_Pelicula";
+            this.horario_Pelicula.Size = new System.Drawing.Size(326, 49);
+            this.horario_Pelicula.StartIndex = 0;
+            this.horario_Pelicula.TabIndex = 20;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 511);
             this.Controls.Add(this.grp_Form_Peliculas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Admin";
+            this.Text = "Nueva pelicula";
             this.grp_Form_Peliculas.ResumeLayout(false);
             this.grp_Form_Peliculas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Inicio)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
         private System.Windows.Forms.GroupBox grp_Form_Peliculas;
         private MaterialSkin.Controls.MaterialTextBox nombre_Pelicula;
-        private MaterialSkin.Controls.MaterialTextBox horario_Pelicula;
         private MaterialSkin.Controls.MaterialTextBox url_Imagen;
         private MaterialSkin.Controls.MaterialTextBox duracion_Pelicula;
         private MaterialSkin.Controls.MaterialDrawer materialDrawer1;
@@ -252,5 +266,6 @@
         private MaterialSkin.Controls.MaterialLabel lbl_Titulo;
         private MaterialSkin.Controls.MaterialButton enviar_Datos;
         private System.Windows.Forms.PictureBox img_Inicio;
+        private MaterialSkin.Controls.MaterialComboBox horario_Pelicula;
     }
 }

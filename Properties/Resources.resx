@@ -121,6 +121,18 @@
   <data name="casa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="derecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\derecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="errot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\errot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flecha_izquierda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flecha-izquierda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="palomitas_de_maiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\palomitas-de-maiz.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

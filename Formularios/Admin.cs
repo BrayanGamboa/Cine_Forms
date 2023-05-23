@@ -22,7 +22,7 @@ namespace Cine_Forms
         {
             nombre_Pelicula.Clear();
             duracion_Pelicula.Clear();
-            horario_Pelicula.Clear();
+            horario_Pelicula.SelectedIndex = 0;
             genero_Pelicula.SelectedIndex = 0;
             url_Imagen.Clear();
         }
@@ -43,15 +43,16 @@ namespace Cine_Forms
                 else
                 {
                     
-                    cartelera.Nueva_Pelicula(nombre, duracion, horario, genero, url, 1);
+                    cartelera.Nueva_Pelicula(nombre, duracion, horario, genero, url);
                     Limpiar_Datos();
+                    MessageBox.Show("Peliula guardada con exito", "Inforaion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
+                
 
             }
-            catch (Exception x)
+            catch (Exception err)
             {
-                MessageBox.Show("Error: " + x.Message);
+                MessageBox.Show($"Error: {err.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 

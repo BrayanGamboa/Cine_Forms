@@ -3,87 +3,60 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp3;
 
 namespace Cine_Forms
 {
     internal class Cartelera
     {
-        private Pelicula Primero = new Pelicula();
-        private Pelicula Ultimo = new Pelicula();
+        private Nodo Primero = new Nodo();
+        private Nodo Ultimo = new Nodo();
 
         public Cartelera() {
             Primero = null;
             Ultimo = null;
         }
 
-        public void Nueva_Pelicula(string nombre, int duracion, string horario, string genero, string url_img, int id)
+        public void Nueva_Pelicula(string nombre, int duracion, string horario, string genero, string url_img)
         {
-            Pelicula Nuevo = new Pelicula();
+            Nodo Nuevo = new Nodo();
+            Pelicula pelicula = new Pelicula();
 
-            Nuevo.Nombre_pelicula = nombre;
-            Nuevo.Duracion_pelicula = duracion;
-            Nuevo.Horario_pelicula = horario;
-            Nuevo.Genero_pelicula = genero;
-            Nuevo.Url_pelicula = url_img;
-            Nuevo.Id_pelicula = id;
+            pelicula.Nombre_pelicula = nombre;
+            pelicula.Duracion_pelicula = duracion;
+            pelicula.Horario_pelicula = horario;
+            pelicula.Genero_pelicula = genero;
+            pelicula.Url_pelicula = url_img;
+            pelicula.Asientos = 30;
 
-            if (Primero == null)
+            Nuevo.pelicula = pelicula;
+
+            if (Nodo.Primero == null)
             {
-                Primero = Nuevo;
-                Primero.Apuntador = null;
-                Ultimo = Nuevo;
+                Nodo.Primero = Nuevo;                
+                Nodo.Ultimo = Nuevo;
             }
             else
             {
-                Ultimo.Apuntador = Nuevo;
-                Nuevo.Apuntador = null;
-                Ultimo = Nuevo;
+                Nuevo.Siguiente = Nodo.Primero;
+                Nodo.Primero.Anterior = Nuevo;
+                Nuevo.Anterior = Nodo.Ultimo;
+                Nodo.Ultimo.Siguiente = Nuevo;
+                Nodo.Ultimo = Nuevo;
             }
         }
 
-        public Pelicula Mostrar_Lista()
+        public Nodo NodoInicial()
         {
-            Pelicula Actual = new Pelicula();
-            Actual = Primero;
-            
-            if (Primero != null)
-            {
-                while (Actual != null)
-                {
-                    Actual = Actual.Apuntador;
-                    
-                }
-                return Actual;
-            }
-            else
-            {
-                return null;
-            }
+            return Nodo.Primero;
         }
 
 
 
-        public Pelicula Buscar_Pelicula(int dato_buscar)
-        {
-            Pelicula Actual = new Pelicula();
-            Actual = Primero;
-            bool localizar_nodo = false;
 
-            while (Actual != null && localizar_nodo == false)
-            {
-                //if (Actual.Dato == dato_buscar)
-                //{
-                //    return Actual.Apuntador;
-                //}
-                Actual = Actual.Apuntador;
-            }
-            return null;
-        }
 
-        //public int Tomar_Id_Anterior()
-        //{
 
-        //}
+
 
 
     }
